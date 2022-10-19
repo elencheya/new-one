@@ -1,0 +1,35 @@
+//Палитра цветов макета и наборы шрифтов вынесены в переменные 
+    //======FONT-FAMILY=====
+    $main-font-family:'Roboto',sans-serif;
+    $secondary-font-family:'Raleway',sans-serif;
+    
+    //=======SVG COLORS*/
+    $svg-header-color: #757575;
+    $svg-header-focus-color: #2196F3;
+
+
+    //====BACKGROUND COLOR====*/
+    $main-background-color: #FFFFFF;
+    $team-background-color: #F5F4FA;
+    $hero-background-color: #2F303A;
+    $footer-background-color: #2F303A;
+
+    //===TEXT COLOR===*/
+    $main-text-color: #757575;
+    $h-bold-text-color: #212121;
+    $logo-header-second-part-text-color: #000000;
+    $logo-footer-second-part-text-color: #FFFFFF;
+    $logo-first-part-text-color: #2196F3;
+    $contacts-footer-text-color: rgba(255, 255, 255, 0.6);
+
+    //===DIFFERENT COLORS===*/
+    $white-color: #FFFFFF;
+    $focus-color: #2196F3;
+    $buttons-background-color: #F5F4FA;
+
+    //===BORDER COLOR==*/
+    $border-color-header: #ECECEC;
+    $border-color-portfolio: #EEEEEE;
+
+    //====FOR TRANSFORMATION=
+    $cubic-mooving-speed-color: 250ms cubic-bezier(0.4, 0, 0.2, 1);

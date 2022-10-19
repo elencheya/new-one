@@ -1,0 +1,53 @@
+
+.follow__name {
+            display: flex;
+            margin-bottom: 20px;
+    
+    
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+    
+            text-transform: uppercase;
+    
+            color: #FFFFFF;
+        }
+
+.follow__list {
+    display: flex;
+        column-gap: 10px;
+}
+
+
+.follow__link {
+    display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    
+        width: 44px;
+        height: 44px;
+    
+        border: 1px solid transparent;
+        border-radius: 50%;
+    
+        background-color: rgba(255, 255, 255, 0.1);
+    
+    
+        transition: background-color $cubic-mooving-speed-color;
+
+        &:hover,
+        &:focus{
+            background-color: $focus-color;
+        }
+    }
+
+
+.follow__img {
+    display: flex;
+    
+        width: 20px;
+        height: 20px;
+    
+        fill: $white-color;
+}

@@ -1,0 +1,128 @@
+body {
+    font-family: $main-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+
+    color: $main-text-color;
+}
+
+//* ====ПРИХОВАНИЙ ЗАГОЛОВОК=======
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+//*=====ПРИБИРАЄМО ДЛЯ ВСІХ ВІДСТУПИ ЩОБ НЕ ПРОБИВАЛИ=====
+h1,
+h2,
+h3,
+p,
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+//*======ЗАДАЄМО КОНТЕЙНЕРУ ШИРИНУ====
+.container {
+width: 100%;
+padding: 0px 15px;
+margin: 0 auto;
+
+
+@media screen and (max-width: 319px) {
+        width: 320px;
+    }
+    
+//phone
+@media screen and (min-width:480px) {
+    width: 480px;
+}
+
+
+    //tablet
+    @media screen and (min-width:768px) {
+            width: 768px;
+        }
+
+    //desktop
+    @media screen and (min-width:1200px) {
+            width: 1200px;
+        }
+
+}
+
+//* всім спискам забираємо крапочки
+.list {
+    list-style: none;
+}
+
+//*всім ссилкам забрали підкреслення
+.link {
+    text-decoration: none;
+}
+
+//*========ДАНІ ПО КАРТИНКАМ для респонсивних зображень
+
+img {
+display: block;
+max-width: 100%;
+height: auto;
+margin: 0 auto;
+}
+
+//*=====УТИЛІТНИЙ КЛАС ДЛЯ ВСІХ СЕКЦІЙ -ОДНАКОВІ ВІДСТУПИ====
+.section {
+
+    //phone
+    //tablet
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+   
+    //desktop
+         @media screen and (min-width:1200px) {
+             padding-top: 94px;
+             padding-bottom: 94px;
+         }
+
+}
+
+
+//*=====CURRENT UNDERLINE
+.current {
+    color: $focus-color;
+    
+    &::after {
+    position: absolute;
+
+    display: block;
+
+
+    content: "";
+    width: 100%;
+    height: 4px;
+
+    bottom: -32px;
+    left: 0;
+
+
+    border-radius: 2px;
+
+
+    background-color: $focus-color;
+    transition: background-color $cubic-mooving-speed-color;
+}
+}
